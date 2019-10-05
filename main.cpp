@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string>
 #include "DS_Sach.h"
+#include "HamChucNang.h"
 using namespace std;
 
 void main()
@@ -17,10 +18,14 @@ void main()
 		ds.nhap_Sach(i);	
 	}
 
+	ChucNang1(ds);
+	
+	
+
 	// Xuat danh sach
 	cout<< ds;
 
 	//Xoa con tro *Sach trong danh sach
-	ds.~DS_Sach();
+	//ds.~DS_Sach();
 		
 }
